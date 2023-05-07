@@ -1,0 +1,65 @@
+.CreateList {
+    width: min(400px, 90vw);
+    min-width: min(400px, 90vw);
+    background-color: white;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    max-height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+.CreateList>h2,
+.CreateList>p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.CreateList p {
+    margin-top: 2rem;
+}
+
+.CreateList .ordered-list {
+    list-style-position: inside;
+    height: fit-content;
+    max-height: 70vh;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 0.5rem;
+}
+
+.CreateList .item {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.CreateList .item a {
+    margin-left: 0.5rem;
+}
+
+.load-more-btn {
+    width: 100%;
+    min-width: 180px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #212121;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .CreateList {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,108 @@
+.Details {
+    width: min(700px, 90vw);
+    aspect-ratio: 16 / 7;
+    background-color: var(--container-color);
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top-section {
+    width: 100%;
+    display: flex;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-image {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.right-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.right-section>h2 {
+    font-size: 1.5rem;
+}
+
+.username {
+    text-decoration: none;
+    color: #212121;
+    cursor: pointer;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.bottom-section>a {
+    width: 180px;
+    min-width: 180px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #212121;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Details {
+        margin-top: 2rem;
+        padding: 2rem 0.5rem;
+    }
+    
+    .top-section {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    .right-section {
+        width: 90%;
+        gap: 0.3rem;
+    }
+}
