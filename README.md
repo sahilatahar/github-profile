@@ -1,4 +1,5 @@
 # Github User Data Fetcher
+<img src='https://user-images.githubusercontent.com/100127570/236706172-242a1997-37e5-4bf0-a2f0-1c2f520074ee.png' alt='image' width='700px'>
 This website allows users to fetch Github user data easily. You can search for any Github user and access their profile information such as name, username, bio, list of followers, list of repositories, and list of followings.
 
 ## Live Demo
