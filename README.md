@@ -3,7 +3,7 @@
 This website allows users to fetch Github user data easily. You can search for any Github user and access their profile information such as name, username, bio, list of followers, list of repositories, and list of followings.
 
 ## Live Demo
-Check out the live demo [here](https://github-user-finder-2023.netlify.app/)!
+Check out the live demo [here](https://github-user-data-fetcher.netlify.app/)!
 ## Features
 - Fetch Github user data including name, bio, followers, repositories, and followings
 - Clickable links to quickly access followers, followings, and repositories
