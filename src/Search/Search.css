@@ -27,7 +27,7 @@
     padding: 0.5rem;
     outline: none;
     font-size: 1rem;
-    border: 2px solid #212121;
+    border: 2px solid white;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -36,10 +36,9 @@
 }
 
 .Search>form>input[type='submit'] {
-    background-color: #212121;
     border-radius: 4px;
     border: none;
-    color: #fff;
+    color: black;
     cursor: pointer;
     outline: none;
     overflow: hidden;
@@ -57,6 +56,7 @@
 
     .Search>form {
         flex-direction: column;
+        gap: 0.8rem;
     }
 
     .Search>form>input[type='text'] {

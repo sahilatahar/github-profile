@@ -2,12 +2,6 @@
     width: min(700px, 90vw);
     aspect-ratio: 16 / 7;
     background-color: var(--container-color);
-    margin-top: 3rem;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
@@ -19,11 +13,6 @@
 .top-section {
     width: 100%;
     display: flex;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -37,6 +26,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    border: 2px solid white;
 }
 
 .right-section {
@@ -53,9 +43,13 @@
     font-size: 1.5rem;
 }
 
+.right-section>p>a {
+    color: var(--text-color);
+}
+
 .username {
     text-decoration: none;
-    color: #212121;
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -77,10 +71,10 @@
     min-width: 180px;
     padding: 0.8rem;
     font-size: 1rem;
-    background-color: #212121;
+    background-color: white;
     border-radius: 4px;
     border: none;
-    color: #fff;
+    color: black;
     cursor: pointer;
     outline: none;
     overflow: hidden;
@@ -91,18 +85,22 @@
 
 @media screen and (max-width: 768px) {
     .Details {
-        margin-top: 2rem;
         padding: 2rem 0.5rem;
     }
-    
+
     .top-section {
         width: 100%;
         flex-direction: column;
         text-align: center;
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
+
     .right-section {
         width: 90%;
         gap: 0.3rem;
+    }
+
+    .bottom-section>a {
+        width: 100%;
     }
 }
