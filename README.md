@@ -19,6 +19,7 @@ Check out the live demo [here](https://github-user-data-fetcher.netlify.app/)!
 - HTML
 - CSS
 - JavaScript
+- Vite
 - React
 - Axios
 - GitHub API
