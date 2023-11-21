@@ -1,9 +1,9 @@
-import './Header.scss';
-import searchIcon from '../../assets/search.svg';
+import searchIcon from '../../assets/Search.svg';
 import { useState, useRef, useCallback, useContext } from 'react';
 import axios from 'axios';
 import { GITHUB_USER_API } from '../../api/GitHub';
 import { Context } from '../../App';
+import './Header.scss';
 
 export const Header = () => {
 

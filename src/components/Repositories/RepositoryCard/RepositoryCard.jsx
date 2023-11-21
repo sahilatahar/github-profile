@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './RepositoryCard.scss';
 import licenseIcon from '../../../assets/license.svg';
-import starIcon from '../../../assets/star.svg';
+import starIcon from '../../../assets/Star.svg';
 import forkIcon from '../../../assets/fork.svg';
 import { calculateTimeAgo } from '../../../utils/time';
 
