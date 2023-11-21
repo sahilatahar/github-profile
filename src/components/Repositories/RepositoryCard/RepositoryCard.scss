@@ -1,0 +1,43 @@
+@import "../../../scss/colors.scss";
+
+.RepositoryCard {
+  background: linear-gradient(to right, $black, $dark-blue);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: $light-white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: auto;
+  cursor: pointer;
+  border: 1px solid $grey-1;
+
+  &:hover {
+    border: 1px solid $light-white;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .last__updated {
+    font-size: 0.75rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}

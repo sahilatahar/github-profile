@@ -1,0 +1,90 @@
+@import "../../scss/colors.scss";
+
+.Header {
+  width: 100%;
+  background-image: url("../../assets/hero-image-github-profile.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  align-items: start;
+
+  .search__div {
+    width: 100%;
+    max-width: min(400px, 90vw);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: $light-white;
+    background-color: $grey-1;
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: $grey-1;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+
+      &::-webkit-input-placeholder {
+        color: #97a3b6;
+      }
+      &::-moz-placeholder {
+        color: #97a3b6;
+        opacity: 1;
+      }
+      &::-ms-input-placeholder {
+        color: #97a3b6;
+      }
+
+      &::placeholder {
+        color: #97a3b6;
+      }
+    }
+    .user {
+      background-color: $grey-1;
+      height: 200%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+      -moz-user-select: none;
+      z-index: 5;
+
+      img {
+        max-height: 100%;
+        border-radius: 0.5rem;
+      }
+
+      .user__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .user__bio {
+          font-size: 0.9rem;
+          font-weight: 500;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

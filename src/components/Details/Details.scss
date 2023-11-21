@@ -1,0 +1,126 @@
+@import "../../scss/colors.scss";
+
+.Details {
+  width: 100%;
+  transform: translateY(-20%);
+
+  @media screen and (max-width: 768px) {
+    transform: translateY(0);
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 440px) {
+    transform: translateY(-10%);
+  }
+
+  .top-section {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 440px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .user-image {
+      width: min(150px, 90%);
+      aspect-ratio: 1;
+      border-radius: 1rem;
+      border: 8px solid $grey-1;
+      background-color: $grey-1;
+      display: block;
+
+      @media screen and (max-width: 768px) {
+        transform: translateY(-50%);
+      }
+
+      @media screen and (max-width: 440px) {
+        transform: translateY(0);
+      }
+    }
+    .right-section {
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-radius: 1rem;
+      background-color: $grey-1;
+      padding: 0.5rem;
+
+      @media screen and (max-width: 440px) {
+        justify-content: center;
+      }
+
+      button {
+        border-radius: 0.8rem;
+        border: 0;
+        padding: 0.5rem;
+        outline: 0;
+        background-color: $black;
+        color: $grey-3;
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 440px) {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        span {
+          color: $grey-3;
+          padding: 0.5rem 1.5rem;
+          padding-left: 1rem;
+          text-overflow: ellipsis;
+
+          &:nth-child(2) {
+            color: $light-white;
+            border-left: 2px solid $grey-3;
+            padding-left: 1.5rem;
+
+            @media screen and (max-width: 440px) {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: $light-white;
+
+    @media screen and (max-width: 440px) {
+      align-items: center;
+      text-align: center;
+    }
+
+    .name {
+      padding-top: 1rem;
+
+      a {
+        color: $light-white;
+        text-decoration: none;
+      }
+    }
+
+    .external-link {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+  }
+}

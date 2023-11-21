@@ -1,0 +1,8 @@
+.MainContainer {
+  width: min(1200px, 100%);
+  padding: 0 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
